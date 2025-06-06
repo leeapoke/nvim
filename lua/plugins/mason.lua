@@ -10,7 +10,7 @@ return {
       "pyright",
       "autopep8",
       "clangd",
-      "gopls"
+      "gopls",
     },
   },
 }

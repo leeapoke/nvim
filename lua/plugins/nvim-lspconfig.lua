@@ -22,9 +22,10 @@ return {
         keys = {
           { "<leader>cR", false },
         },
-        pyright = {},
-        gopls = {},
       },
+      pyright = {},
+      gopls = {},
+      rust_analyzer = false,
     },
   },
 }
