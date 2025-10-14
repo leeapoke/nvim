@@ -22,9 +22,9 @@ local function is_dark_mode()
   return result:match("Dark") ~= nil
 end
 if is_dark_mode() then
-  vim.fn.system("/Users/leeapoke/Documents/Code/scripts/nvim-theme dark")
+  vim.fn.system("/Users/leeapoke/Documents/WorkSpace/scripts/nvim-theme dark")
 else
-  vim.fn.system("/Users/leeapoke/Documents/Code/scripts/nvim-theme light")
+  vim.fn.system("/Users/leeapoke/Documents/WorkSpace/scripts/nvim-theme light")
 end
 
 require("lazy").setup({

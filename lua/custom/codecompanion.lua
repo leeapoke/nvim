@@ -1,7 +1,7 @@
 require("codecompanion").setup({
   adapters = {
     siliconflow_deepseek = function()
-      return require("codecompanion.adapters").extend("deepseek", {
+      return require("codecompanion.adapters").extend("openai", {
         url = "https://api.siliconflow.cn/v1/chat/completions",
         env = {
           api_key = function()
@@ -13,6 +13,9 @@ require("codecompanion").setup({
             default = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
           },
         },
+        tools = {},
+        tool_opts = {},
+        model_opts = {},
       })
     end,
   },
